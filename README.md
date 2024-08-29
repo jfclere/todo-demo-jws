@@ -68,7 +68,7 @@ First things first we need to deploy a database before we deploy the application
 ### Database
 The following command creates a new PostgreSQL database application in OpenShift using the latest PostgreSQL image. It sets up the database with the username jws, the password jws, and the database name todos. The application is named todos-database.
 ```bash
-oc new-app -e POSTGRESQL_USER=jws \                                                                                                                                                             (base) 
+oc new-app -e POSTGRESQL_USER=jws \
             -e POSTGRESQL_PASSWORD=jws \
             -e POSTGRESQL_DATABASE=todos \
             openshift/postgresql:latest \
